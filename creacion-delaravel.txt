@@ -1,0 +1,4 @@
+creacion de un proyecto en la terminal shell
+
+cd C:/xampp/htdocs ... aqui se coloca la ruta en donde sera puesto el proyecto
+composer create-project laravel/laravel hola( el nombre del proyecto) --prefer-dist

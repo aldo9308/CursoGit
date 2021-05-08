@@ -1,0 +1,8 @@
+Laravel: es un frameworkque utliza una arquitectura MVC 
+MVC: Model view controller. Consiste en dividir en 3 partes nuestra app
+
+Modelo: es el que hace las peticiones y comunica a la base de datos
+Vista: muestra visual mediante interfaces graficas, por lo general son
+formularios HTML o codigo HTML.
+Controlador: controla o funciona de intermediario entre el modelo o vista
+

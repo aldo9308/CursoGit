@@ -1,0 +1,9 @@
+Laravel is a PHP web framework who uses the MVC architecture
+Architecture is the design pattern that has specific framework has.
+MVC = Model View Controller 
+
+Model -------------- deals with database
+
+View----------------- Deals with the HTML
+
+Controller ----------- the middle-man(intermediario)

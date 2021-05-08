@@ -1,0 +1,20 @@
+# VHOST CURSO LARAVEL PROYECTO 1
+<VirtualHost *:8090>
+ DocumentRoot "c:xampp/htdocs/curso-laravel/probando-laravel/public"
+ ServerName curso-laravel1.com.devel
+ ServerAlias www.curso-laravel1.com.devel
+ <Directory ""c:xampp/htdocs/curso-laravel/probando-laravel/public">
+  Options Indexes FollowSymLinks
+  AllowOverride All
+  Order Deny, Allow
+  Allow from all
+  </Directory>
+ </VirtualHost>
+
+
+
+ttrree
+
+
+127.0.0.1           cursolaravel1.com.devel
+

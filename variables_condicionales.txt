@@ -1,0 +1,84 @@
+Declaracion de variable en Laravel
+
+Para hacer una declaracion de una variable en laravel se 
+utiliza las llaves dobles, o dos signos de exclamacion,
+{{$nombre}} o {!!$nombre!!}.
+o como una declaracion normal en php
+<?=$edad?>
+
+
+Comentarios
+
+{{ -- Mi comentario de HTML--}}
+ejemplo de un comentario
+
+<?php // Mi comentario en html ?>
+
+
+Condicionales
+
+<h1> Pagina de Contacto {!!$nombre!!} {{isset($edad) && !is_null($edad) ? $edad : 'No existe la edad'}}
+
+
+
+@if(!is_null($edad))
+ No existe la edad
+
+@else 
+ Si existe la edad: $edad
+
+@endif
+
+<p>
+<?php $numero = 4; ?>
+Tabla del 2 // {{$numero}}
+</p>
+
+@for($i = 0; i <= 10; i++)
+ {{$i.' x 2'.$numero.' ='.($i*2//$numero)}}
+@endfor
+
+<?php $f = 1 ?>
+
+@while($f<=7)
+ <p>{{'Hola Mundo '.$f}}</p>
+ <?php $f++ ?>
+@endwhile
+
+<h1>Listado de frutas </h1>
+
+@foreach ($frutas as $fruta)
+ <p>{{$fruta}}</p>
+@endforeach
+
+Include 
+
+
+<h1 style="background:yellow"> Esto es una cabezera</h1>
+
+Se tiene que colocar la instruccion @include y señalar el elemento
+a incluir.
+
+@include('contacto.cabecera')
+
+se le puede colocar arrays o informacion adentro, por ejemplo:
+
+<h1 style="background:yellow"> Esto es una cabezera</h1>
+@if(isset($nombre))
+<h2>{{$nombre}}</h2>
+@endif
+
+En la pagina principal se coloca la siguiente instruccion para
+que mande a llamar a la variable nombre
+
+@include('contacto.cabecera', array('nombre' => $nombre))
+
+
+
+
+middleware es un pequeño metodo que se ejecuta antes o despues
+de ejecutar una accion de nuestro controlador.
+
+
+
+
